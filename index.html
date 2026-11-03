@@ -1,3 +1,10 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;-webkit-text-size-adjust:100%;text-size-adjust:100%}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>CJXplorer: второй взгляд</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
@@ -327,6 +334,8 @@ html,body{overflow-x:clip}
 @media (max-width:600px){.dbr{display:none}.ctxd .st{flex:1}}
 </style>
 
+</head>
+<body>
 <header class="hero">
   <div class="wrap">
     <p class="eyebrow hi">Таунхолл 2026 · Дизайн-система</p>
@@ -580,3 +589,6 @@ typo(document.body);
 
 document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{const el=document.getElementById(b.dataset.copy).querySelector('.doc-body');const txt=el.innerText;try{await navigator.clipboard.writeText(txt);b.textContent='Скопировано'}catch(_){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Выделено — нажмите Ctrl+C'}setTimeout(()=>b.textContent='Скопировать',2500)}));
 </script>
+
+</body>
+</html>
